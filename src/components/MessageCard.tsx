@@ -28,13 +28,12 @@ import { ApiResponse } from "@/types/ApiResponse"
 import dayjs from "dayjs"
   
 type MessageCardProps = {
-
     username: string; //changed
     message: Message;
     onMessageDelete: (messageId: string) => void
 }
 
-function MessageCard({  message, onMessageDelete }: MessageCardProps) {  //here add message.
+const MessageCard: React.FC<MessageCardProps> = ({ message, onMessageDelete }) => {  //here add message.
 
     const { toast } = useToast();
 
