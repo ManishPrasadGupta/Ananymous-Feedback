@@ -4,6 +4,7 @@ import mongoose,  {Schema, Document} from "mongoose";  //we need document as we 
 
 //Message Schema
 export interface Message extends Document{
+  _id: string;
   content: string; // in typescript we write string where `s` is a small.
   createdAt: Date;
 }
