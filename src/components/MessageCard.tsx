@@ -28,7 +28,7 @@ import { ApiResponse } from "@/types/ApiResponse"
 import dayjs from "dayjs"
   
 type MessageCardProps = {
-    username: string; //changed
+    username: string; 
     message: Message;
     onMessageDelete: (messageId: string) => void
 }
